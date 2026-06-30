@@ -29,3 +29,7 @@ Initially, the text sliding-window configuration utilized an overly aggressive s
    ```bash
    git clone [https://github.com/YOUR_GITHUB_USERNAME/simple-RAG.git](https://github.com/YOUR_GITHUB_USERNAME/simple-RAG.git)
    cd simple-RAG
+
+## 🔮 Roadmap / Future Enhancements
+- [x] **Plain Text & Markdown Support:** Currently, the system natively parses and chunks clean raw text/markdown documents (like the included *Alice in Wonderland* file).
+- [ ] **PDF Document Loader:** (Coming Soon) I plan to integrate a PDF parser (such as `PyPDF` or `pdfplumber`) to automatically extract text from PDFs, clean up layout artifacts, and feed them directly into the chunking pipeline.
