@@ -33,3 +33,4 @@ Initially, the text sliding-window configuration utilized an overly aggressive s
 ## 🔮 Roadmap / Future Enhancements
 - [x] **Plain Text & Markdown Support:** Currently, the system natively parses and chunks clean raw text/markdown documents (like the included *Alice in Wonderland* file).
 - [ ] **PDF Document Loader:** (Coming Soon) I plan to integrate a PDF parser (such as `PyPDF` or `pdfplumber`) to automatically extract text from PDFs, clean up layout artifacts, and feed them directly into the chunking pipeline.
+- [ ] **Local Vector Caching / Persistence:** Implement a system to save pre-computed vector embeddings directly to a separate local directory (using JSON files or a lightweight database like SQLite/ChromaDB). On startup, the system will check this folder first to reload existing vectors instead of wasting compute re-embedding files.
